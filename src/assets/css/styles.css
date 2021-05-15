@@ -1,0 +1,124 @@
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(34, 38, 47)!important;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh !important;
+  width: 100vw;
+  margin-left: -1rem;
+  padding-right: 0;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  background-color: rgb(34, 38, 47)!important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-outline-info {
+    color: white!important;
+    border-color: white!important;
+}
+
+.dashButton {
+    margin-left: 1em;
+    border-radius: 8px !important;
+    padding: .3em 1em !important;
+}
+
+.dashIcon {
+    margin-top: -.2em;
+    margin-right: .5em;
+}
+
+.navItems {
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.navItems:hover {
+    color: #17a2b8;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navIcon {
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-top: -.2em;
+}
+
+.borderSection {
+    border-right: 1px solid white;
+    padding: 0 1rem!important;
+    margin: .6rem 0!important;
+}
+
+.userIcon {
+    color: white;
+    font-size: 25px;
+    margin-right: .5em;
+}
+
+.sideBarItem {
+    margin-left: 1em;
+    width: 100%;
+    background-color: rgb(64, 70, 84);
+    padding: 1.1em 1.5em;
+    margin-bottom: .3em;
+    display: flex;
+    color: white;
+    font-size: 13px;
+}
+
+.sidebarDash {
+    border-left: 8px solid rgb(223, 222, 71);
+    color: rgb(223, 222, 71);
+    margin-bottom: .8em;
+}
+
+.sidebarIcon {
+    color: white;
+    margin-top: .1em;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.sidebarMainIcon {
+    font-size: 20px;
+    margin-top: .1em;
+    margin-right: .3em;
+}
+
+.sidebarLogo {
+    color: white;
+    margin: -1em 0 2em 1em;
+    text-align: center;
+}
