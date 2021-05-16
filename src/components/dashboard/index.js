@@ -3,6 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import Sidebar from "./sidebar";
 import NavBar from "./navbar";
 import "../../assets/css/styles.css";
+import Map from "./map";
 
 const Dashboard = (props) => {
   return (
@@ -14,6 +15,7 @@ const Dashboard = (props) => {
             <Col xs={10} id="page-content-wrapper">
             <NavBar />
             {/* Componente del mapa y las cards */}
+            <Map/>
             </Col>
         </Row>
     </>
