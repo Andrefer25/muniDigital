@@ -1,5 +1,6 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  background-color: #343a40 !important;
 }
 
 .sidebar {
@@ -11,7 +12,7 @@ body {
   z-index: 100;
   padding: 48px 0 0;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
-  background-color: rgb(34, 38, 47)!important;
+  background-color: rgb(34, 38, 47) !important;
 }
 
 #sidebar-wrapper {
@@ -23,7 +24,7 @@ body {
   -moz-transition: margin 0.25s ease-out;
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
-  background-color: rgb(34, 38, 47)!important;
+  background-color: rgb(34, 38, 47) !important;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -39,125 +40,352 @@ body {
 }
 
 .btn-outline-info {
-    color: white!important;
-    border-color: white!important;
+  color: white !important;
+  border-color: white !important;
 }
 
 .dashButton {
-    margin-left: 1em;
-    border-radius: 8px !important;
-    padding: .3em 1em !important;
+  margin-left: 1em;
+  border-radius: 8px !important;
+  padding: 0.3em 1em !important;
 }
 
 .dashIcon {
-    margin-top: -.2em;
-    margin-right: .5em;
+  margin-top: -0.2em;
+  margin-right: 0.5em;
 }
 
 .navItems {
-    color: white;
-    font-weight: 200;
-    font-size: 14px;
+  color: white;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 .navItems:hover {
-    color: #17a2b8;
+  color: rgb(102, 222, 129);
 }
 
 .active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .navIcon {
-    font-weight: bold;
-    color: white;
-    font-size: 15px;
-    margin-top: -.2em;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  margin-top: -0.2em;
 }
 
 .borderSection {
-    border-right: 1px solid white;
-    padding: 0 1rem!important;
-    margin: .6rem 0!important;
+  border-right: 1px solid white;
+  padding: 0 1rem !important;
+  margin: 0.6rem 0 !important;
 }
 
 .userIcon {
-    color: white;
-    font-size: 25px;
-    margin-right: .5em;
+  color: white;
+  font-size: 25px;
+  margin-right: 2em;
+  margin-left: 0.7em;
 }
 
 .sideBarItem {
-    margin-left: 1em;
-    width: 100%;
-    background-color: rgb(64, 70, 84);
-    padding: 1.1em 1.5em;
-    margin-bottom: .3em;
-    display: flex;
-    color: white;
-    font-size: 13px;
+  margin-left: 1em;
+  width: 100%;
+  background-color: rgb(64, 70, 84);
+  padding: 1.1em 1.5em;
+  margin-bottom: 0.3em;
+  display: flex;
+  color: white;
+  font-size: 13px;
+}
+
+.sideBarItem:hover {
+  cursor: pointer;
+  background-color: rgb(93, 101, 121);
 }
 
 .sidebarDash {
-    border-left: 8px solid rgb(223, 222, 71);
-    color: rgb(223, 222, 71);
-    margin-bottom: .8em;
+  border-left: 8px solid rgb(223, 222, 71);
+  color: rgb(223, 222, 71);
+  margin-bottom: 0.8em;
 }
 
 .sidebarIcon {
-    color: white;
-    margin-top: .1em;
-    margin-left: auto;
-    font-size: 18px;
+  color: white;
+  margin-top: 0.1em;
+  margin-left: auto;
+  font-size: 18px;
+}
+
+.black {
+  background-color: black !important;
 }
 
 .sidebarMainIcon {
-    font-size: 20px;
-    margin-top: .1em;
-    margin-right: .3em;
+  font-size: 20px;
+  margin-top: 0.1em;
+  margin-right: 0.3em;
 }
 
 .sidebarLogo {
-    color: white;
-    margin: -1em 0 2em 1em;
-    text-align: center;
+  color: white;
+  margin: -1em 0 2em 1em;
+  text-align: center;
 }
 
 .modal-header {
-    border-bottom: none !important;
+  border-bottom: none !important;
 }
 
 .centeredCol {
-    text-align: center;
-
+  text-align: center;
 }
 
 .borderedCol {
-    border-left:  2px solid  rgba(150, 150, 150, 0.2);
-    border-right:  2px solid rgba(150, 150, 150, 0.2);
-
+  border-left: 2px solid rgba(150, 150, 150, 0.2);
+  border-right: 2px solid rgba(150, 150, 150, 0.2);
 }
 
-.redCol{
-    color: rgb(255, 61, 61);
-    font-weight: bolder;
-
+.borderRight {
+  border-right: 2px solid rgba(150, 150, 150, 0.2);
 }
 
-.yellowCol{
-    color: rgb(242, 201, 53);
-    font-weight: bolder;
+.redCol {
+  color: rgb(255, 61, 61);
+  font-weight: bolder;
 }
 
-.greenCol{
-    color: rgb(83, 212, 134);
-    font-weight: bolder;
+.yellowCol {
+  color: rgb(242, 201, 53);
+  font-weight: bolder;
 }
 
-h3{
-    margin-bottom: 1px !important;
+.greenCol {
+  color: rgb(83, 212, 134);
+  font-weight: bolder;
+}
+
+h3 {
+  margin-bottom: 1px !important;
 }
 
 .cardRow {
-    margin-top: -1.5em;
+  margin-top: -1em;
+}
+
+.mapSection {
+  background: url("./../img/map.PNG");
+  background-size: cover;
+  height: calc(100% - 56px);
+}
+
+.mapSection::before {
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cardColumn {
+  padding: 0 2.5em;
+}
+
+.headerTitle {
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 0.4em;
+  margin-left: 0.5em;
+}
+
+.headerIcon {
+  margin-top: 0.5em;
+}
+
+.modal-header {
+  padding: 0.3em 0.5em !important;
+}
+
+.modal-content {
+  border-radius: 10px !important;
+}
+
+.centeredCol h3 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.centeredCol p {
+  font-size: 12px;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+.percent {
+  font-weight: bolder;
+  margin-top: 0.5em;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 9px;
+  color: rgb(64, 70, 84);
+}
+
+.dateRange {
+  margin-left: auto;
+  font-size: 11px;
+  margin-top: 0.5em;
+  margin-right: -6em;
+}
+
+.fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.7s 0.7s, height 0.7s 0.7s, opacity 0.7s;
+}
+
+.fadeIn {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.presupuesto {
+  font-size: 21px !important;
+  margin-top: 0.3em;
+}
+
+.dropdown-menu {
+  min-width: initial !important;
+  background: #343a40 !important;
+  color: white;
+  padding-bottom: 0 !important;
+}
+
+.dropdown-header {
+  padding: 0.5rem 0.5rem !important;
+}
+
+.dropdown-item {
+  color: white !important;
+  font-weight: 300 !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(102, 222, 129) !important;
+  color: #343a40 !important;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled).active,
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.btn-outline-info:hover,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #343a40 !important;
+  background-color: rgb(102, 222, 129)!important;
+  border-color: rgb(102, 222, 129)!important;
+}
+
+.greenLine {
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgb(102, 222, 129);
+}
+
+.yellowLine {
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgb(242, 201, 53);
+}
+
+.redLine {
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgb(255, 61, 61);;
+}
+
+.percentChart {
+    font-weight: bold!important;
+    color: black !important;
+    margin-top: -.25em;
+    margin-bottom: .3em!important;
+    font-size: 13px!important;
+}
+
+.moreSpace {
+    margin-left: -.6em!important;
+}
+
+.infoChart {
+    color: grey!important;
+    float: right!important;
+    margin-right: 1em;
+}
+
+.chartRow {
+    margin: .8em 0 1.1em;
+}
+
+.moreInfoSpace {
+    margin-left: -2em;
+}
+
+.chartValue {
+    float: right;
+    margin-right: 1em;
+}
+
+.chartIcon {
+    color: green;
+    margin-top: -.2em;
+    font-size: 30px!important;
 }

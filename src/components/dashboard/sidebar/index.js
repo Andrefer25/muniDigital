@@ -7,7 +7,7 @@ import { FaHandPaper, FaClipboardList, FaTree } from "react-icons/fa";
 import { GiMiningHelmet } from "react-icons/gi";
 import { AiFillPieChart } from "react-icons/ai"
 
-const SideBar = () => {
+const SideBar = (props) => {
   return (
     <>
       <Nav
@@ -24,7 +24,7 @@ const SideBar = () => {
             <MdLocationOn className="sidebarMainIcon"/> Dashboard
           </div>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item onClick={() => props.reclamos(true)}>
           <div className="sideBarItem">
               <div>
                 Reclamos - PQSRSD
@@ -40,7 +40,7 @@ const SideBar = () => {
                 <BsTools className="sidebarIcon" />
           </div>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item onClick={() => props.asistencia(true)}>
           <div className="sideBarItem">
               <div>
                 Asistencia Social
@@ -48,7 +48,7 @@ const SideBar = () => {
                 <FaHandPaper className="sidebarIcon" />
           </div>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item onClick={() => props.obras(true)}>
           <div className="sideBarItem">
               <div>
                 Obras
@@ -56,7 +56,7 @@ const SideBar = () => {
                 <GiMiningHelmet className="sidebarIcon" />
           </div>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item onClick={() => props.accidentes(true)}>
           <div className="sideBarItem">
               <div>
                 Inseguridad y Accidentes
@@ -72,7 +72,7 @@ const SideBar = () => {
                 <FaClipboardList className="sidebarIcon" />
           </div>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item onClick={() => props.verde(true)}>
           <div className="sideBarItem">
               <div>
                 Arbolado y Espacios Verdes
@@ -80,7 +80,7 @@ const SideBar = () => {
                 <FaTree className="sidebarIcon" />
           </div>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item onClick={() => props.salud(true)}>
           <div className="sideBarItem">
               <div>
                 Salud
@@ -89,7 +89,7 @@ const SideBar = () => {
           </div>
         </Nav.Item>
         <Nav.Item>
-          <div className="sideBarItem">
+          <div className="sideBarItem black">
               <div>
                 Percepcion Ciudadana
               </div>
