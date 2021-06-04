@@ -211,7 +211,7 @@ export const CardObras = ({ visible, close }) => {
             <Row className="cardRow">
               <Col md={4} className="centeredCol borderRight">
                 { visible && 
-                  <h3 className="presupuesto"><CountUp end={3104519676} duration={1} /></h3>
+                  <h3 className="presupuesto"><CountUp end={3104} duration={1} />M</h3>
                 }
                 <p>Presupuesto</p>
               </Col>
@@ -250,8 +250,8 @@ export const CardAreaVerde = ({ visible, close }) => {
           </Modal.Header>
           <Modal.Body>
             <Row className="cardRow">
-              <Col className="centeredCol yellowCol">
-                <img src={chart} alt="chart"/>
+              <Col className="centeredCol imgCol">
+                <img className="chartImg" src={chart} alt="chart"/>
               </Col>
               <Col className="centeredCol">
                 <Row className="chartRow">

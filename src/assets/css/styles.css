@@ -1,5 +1,7 @@
+
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: #343a40 !important;
 }
 
@@ -78,7 +80,13 @@ body {
 
 .borderSection {
   border-right: 1px solid white;
-  padding: 0 1rem !important;
+  padding: 0 2rem !important;
+  margin: 0.6rem 0 !important;
+}
+
+.borderSectionRight {
+  border-left: 1px solid white;
+  padding: 0 2rem !important;
   margin: 0.6rem 0 !important;
 }
 
@@ -86,7 +94,6 @@ body {
   color: white;
   font-size: 25px;
   margin-right: 2em;
-  margin-left: 0.7em;
 }
 
 .sideBarItem {
@@ -108,11 +115,18 @@ body {
 .sidebarDash {
   border-left: 8px solid rgb(223, 222, 71);
   color: rgb(223, 222, 71);
+}
+
+.sidebarActive {
+  border-left: 8px solid rgb(83, 212, 134);
+  color: rgb(83, 212, 134);
+}
+
+.dashboardPrinc {
   margin-bottom: 0.8em;
 }
 
 .sidebarIcon {
-  color: white;
   margin-top: 0.1em;
   margin-left: auto;
   font-size: 18px;
@@ -129,9 +143,13 @@ body {
 }
 
 .sidebarLogo {
-  color: white;
   margin: -1em 0 2em 1em;
+  padding: .5em 1em;
   text-align: center;
+}
+
+.sidebarLogo img {
+  width: 100%;
 }
 
 .modal-header {
@@ -175,9 +193,11 @@ h3 {
 }
 
 .mapSection {
-  background: url("./../img/map.PNG");
+  /* background: url("./../img/mapBG.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100% - 56px);
+  height: calc(100% - 56px); */
 }
 
 .mapSection::before {
@@ -190,7 +210,7 @@ h3 {
 }
 
 .cardColumn {
-  padding: 0 2.5em;
+  padding: 0 3.6em;
 }
 
 .headerTitle {
@@ -388,4 +408,51 @@ h3 {
     color: green;
     margin-top: -.2em;
     font-size: 30px!important;
+}
+
+.subToggle {
+  margin-top: .5em;
+  margin-bottom: -.8em;
+}
+
+.dropdown-toggle {
+  white-space: nowrap;
+  color: white;
+  font-weight: 300;
+}
+
+.dropdown-toggle:hover {
+  color: rgb(102, 222, 129);
+}
+
+.dropdown-toggle::after {
+  display: none!important;
+}
+
+.dropIcon {
+  margin-top:.2em;
+  margin-left: -.8em;
+  margin-right: 1.5em;
+  font-weight: bold;
+}
+
+.imgCol {
+  padding: .5em;
+}
+
+
+.mapBox .leaflet-container {
+  width: calc(100vw - 230px)!important;
+  height: calc(100vh - 56px)!important;
+  overflow: hidden;
+  margin: 0;
+  z-index: 1!important;
+}
+
+.dashboardRow {
+  z-index: 2000 !important;
+}
+
+.leaflet-pane {
+  z-index: -1!important;
 }
