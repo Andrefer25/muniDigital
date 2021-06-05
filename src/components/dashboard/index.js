@@ -19,7 +19,7 @@ const Dashboard = () => {
   return (
     <>
       <Row>
-        <Col xs={2} id="sidebar-wrapper">
+        <Col xl={2} lg={3}id="sidebar-wrapper">
           <Sidebar 
             reclamos={setReclamos}
             salud={setSalud}
@@ -29,14 +29,14 @@ const Dashboard = () => {
             verde={setVerde}
           />
         </Col>
-        <Col xs={10} id="page-content-wrapper">
+        <Col xl={10} lg={9} id="page-content-wrapper">
           <NavBar />
           <div className="mapSection">
             <div className="mapBox">
-              <Map center={[-37.1134, -56.8570]} zoom={15}>
+              <Map center={[-37.1134, -56.8570]} zoom={15} scrollWheelZoom={false}>
                 <TileLayer
                   attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                  url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png"
                 />
                 <Row className="dashboardRow">
                   <Col md={4}>
