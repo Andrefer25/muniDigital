@@ -1,0 +1,55 @@
+.navbar {
+    padding: 0.85rem 1rem !important;
+}
+
+.dashButton {
+    margin-left: 1em;
+    border-radius: 8px !important;
+    padding: 0.3em 1em !important;
+}
+
+.navIcon {
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-top: -0.2em;
+}
+
+.dropIcon {
+    margin-top: 0.2em;
+    margin-left: -0.8em;
+    margin-right: 1.5em;
+    font-weight: bold;
+}
+
+.navItems {
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.navItems:hover {
+    color: rgb(102, 222, 129);
+}
+
+.userIcon {
+    color: white;
+    font-size: 25px;
+    margin-right: 2em;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.borderSection {
+    border-right: 1px solid white;
+    padding: 0 2rem !important;
+    margin: 0.6rem 0 !important;
+}
+  
+.borderSectionRight {
+    border-left: 1px solid white;
+    padding: 0 2rem !important;
+    margin: 0.6rem 0 !important;
+}

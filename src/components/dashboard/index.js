@@ -5,8 +5,7 @@ import NavBar from "./navbar";
 import "../../assets/css/styles.css";
 import "leaflet/dist/leaflet.css";
 import { CardReclamos, CardSalud, CardAsistenciaSocial, CardAccidentes, CardAreaVerde, CardObras } from "./cardInfo";
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
-
+import { Map, TileLayer } from 'react-leaflet';
 
 const Dashboard = () => {
   const [reclamos, setReclamos] = useState(false);
@@ -33,32 +32,32 @@ const Dashboard = () => {
           <NavBar />
           <div className="mapSection">
             <div className="mapBox">
-              <Map center={[-37.1134, -56.8570]} zoom={15} scrollWheelZoom={false}>
+              <Map center={[-37.1134, -56.8570]} zoom={16} scrollWheelZoom={true}>
                 <TileLayer
                   attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png"
                 />
-                <Row className="dashboardRow">
-                  <Col md={4}>
-                    <div className="cardColumn">
-                      <CardReclamos visible={reclamos} close={setReclamos} />
-                      <CardSalud visible={salud} close={setSalud} />
-                      <CardAsistenciaSocial visible={asistencia} close={setAsistencia} />
-                      <CardAccidentes visible={accidentes} close={setAccidentes}/>
-                    </div>
-                  </Col>
-                  <Col >
-                    <div className="">
-                    </div>
-                  </Col>
-                  <Col md={5}>
-                    <div className="cardColumn">
-                      <CardAreaVerde visible={verde} close={setVerde} />
-                      <CardObras visible={obras} close={setObras} />
-                    </div>
-                  </Col>
-                </Row>
               </Map>
+              <Row className="dashboardRow">
+                <Col md={4}>
+                  <div className="cardColumn">
+                    <CardReclamos visible={reclamos} close={setReclamos} />
+                    <CardSalud visible={salud} close={setSalud} />
+                    <CardAsistenciaSocial visible={asistencia} close={setAsistencia} />
+                    <CardAccidentes visible={accidentes} close={setAccidentes}/>
+                  </div>
+                </Col>
+                <Col >
+                  <div className="">
+                  </div>
+                </Col>
+                <Col md={5}>
+                  <div className="cardColumn">
+                    <CardAreaVerde visible={verde} close={setVerde} />
+                    <CardObras visible={obras} close={setObras} />
+                  </div>
+                </Col>
+              </Row>
             </div>
             <br />
           </div>

@@ -66,6 +66,10 @@ body {
   color: rgb(102, 222, 129);
 }
 
+.navbar {
+  padding: 0.85rem 1rem!important;
+}
+
 .active {
   font-weight: bold;
 }
@@ -142,7 +146,7 @@ body {
 }
 
 .sidebarLogo {
-  margin: -1em 0 2em 1em;
+  margin: -1.2em 0 1.8em 1em;
   padding: 0em 1em;
   text-align: center;
 }
@@ -457,7 +461,7 @@ h3 {
 }
 
 .leaflet-pane {
-  z-index: -1!important;
+  z-index: -2000!important;
 }
 
 .leaflet-container::before {
@@ -470,16 +474,30 @@ h3 {
 }
 
 .modal-dialog {
-  margin: 1rem auto;
+  margin: 1rem auto!important;
 }
 
 .leaflet-top {
-  bottom: 0;
+  bottom: 0!important;
+  top: initial!important;
 }
 .leaflet-left {
-  right: 0;
+  right: 0!important;
+  left: initial!important;
 }
 
 .leaflet-control-zoom {
   margin-bottom: 2em!important;
+  margin-right: .5em;
+}
+
+.mapBox {
+  position: relative!important;
+}
+
+.dashboardRow {
+  position: absolute!important;
+  background: none!important;
+  top: 0;
+  width: 100%;
 }

@@ -5,6 +5,7 @@ import { MdRemoveRedEye } from "react-icons/md";
 import { GoChevronDown } from "react-icons/go";
 import { FaUserCircle } from "react-icons/fa";
 
+import "./index.css";
 
 const NavBar = () => {
   return (
