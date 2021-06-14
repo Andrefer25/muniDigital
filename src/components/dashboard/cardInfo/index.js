@@ -12,7 +12,7 @@ import { Rnd } from "react-rnd";
 export const CardReclamos = ({ visible, close }) => {
   if (visible)
     return (
-      <Rnd enableResizing={false} bounds=".mapBox">
+      <Rnd enableResizing={false} bounds=".mapBox" default={{ x: 0, y: 0 }}>
           <Modal.Dialog className={visible? 'animated animatedFadeInUp fadeInUp':'fadeOut'}>
             <Modal.Header closeButton onHide={() => close(false)}>
               <BsFillExclamationCircleFill className="headerIcon" />
@@ -99,7 +99,7 @@ export const CardTareas = ({ visible, close }) => {
 export const CardSalud = ({ visible, close }) => {
   if (visible)
   return (
-    <Rnd enableResizing={false} bounds=".mapBox">
+    <Rnd enableResizing={false} bounds=".mapBox" default={{ x: 0, y: 150 }}>
         <Modal.Dialog className={visible? 'animated animatedFadeInUp fadeInUp':'fadeOut'}>
           <Modal.Header closeButton onHide={() => close(false)}>
             <RiAddCircleFill className="headerIcon" />
@@ -139,7 +139,7 @@ export const CardSalud = ({ visible, close }) => {
 export const CardAsistenciaSocial = ({ visible, close }) => {
   if (visible)
     return (
-      <Rnd enableResizing={false} bounds=".mapBox">
+      <Rnd enableResizing={false} bounds=".mapBox"  default={{ x: 0, y: 300 }}>
         <Modal.Dialog className={visible ? 'animated animatedFadeInUp fadeInUp' : 'fadeOut'}>
           <Modal.Header closeButton onHide={() => close(false)}>
             <FaHandPaper className="headerIcon" />
@@ -176,7 +176,7 @@ export const CardAsistenciaSocial = ({ visible, close }) => {
 export const CardAccidentes = ({ visible, close }) => {
   if (visible)
     return (
-      <Rnd enableResizing={false} bounds=".mapBox">
+      <Rnd enableResizing={false} bounds=".mapBox"  default={{ x: 0, y: 435 }}>
         <Modal.Dialog className={visible ? 'animated animatedFadeInUp fadeInUp' : 'fadeOut'}>
           <Modal.Header closeButton onHide={() => close(false)}>
             <RiAlarmWarningFill className="headerIcon" />
@@ -213,7 +213,7 @@ export const CardAccidentes = ({ visible, close }) => {
 export const CardObras = ({ visible, close }) => {
   if (visible)
     return (
-      <Rnd enableResizing={false} bounds=".mapBox" size={{ width: 500,  height: "auto" }}>
+      <Rnd enableResizing={false} bounds=".mapBox" default={{ x: 800, y: 385 }} size={{ width: 420,  height: "auto" }}>
         <Modal.Dialog className={visible ? 'animated animatedFadeInUp fadeInUp' : 'fadeOut'}>
           <Modal.Header closeButton onHide={() => close(false)}>
             <GiMiningHelmet className="headerIcon" />
@@ -256,7 +256,7 @@ export const CardObras = ({ visible, close }) => {
 export const CardAreaVerde = ({ visible, close }) => {
   if (visible)
     return (
-      <Rnd enableResizing={false} bounds=".mapBox">
+      <Rnd enableResizing={false} bounds=".mapBox" default={{ x: 800, y: 0 }} size={{ width: 440,  height: "auto" }}>
         <Modal.Dialog className={visible ? 'animated animatedFadeInUp fadeInUp' : 'fadeOut'}>
           <Modal.Header closeButton onHide={() => close(false)}>
             <FaTree className="headerIcon" />

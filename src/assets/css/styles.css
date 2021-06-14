@@ -1,4 +1,3 @@
-
 body {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -284,7 +283,6 @@ h3 {
   from {
     transform: translate3d(0, 40px, 0);
   }
-
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -295,7 +293,6 @@ h3 {
   from {
     transform: translate3d(0, 40px, 0);
   }
-
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -347,71 +344,69 @@ h3 {
   color: #343a40 !important;
 }
 
-.btn-outline-info:not(:disabled):not(.disabled).active,
-.btn-outline-info:not(:disabled):not(.disabled):active,
-.btn-outline-info:hover,
-.show > .btn-outline-info.dropdown-toggle {
+.btn-outline-info:not(:disabled):not(.disabled).active, .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:hover, .show>.btn-outline-info.dropdown-toggle {
   color: #343a40 !important;
   background-color: rgb(102, 222, 129)!important;
   border-color: rgb(102, 222, 129)!important;
 }
 
 .greenLine {
-    width: 30px;
-    height: 8px;
-    border-radius: 5px;
-    background-color: rgb(102, 222, 129);
+  width: 30px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(102, 222, 129);
 }
 
 .yellowLine {
-    width: 30px;
-    height: 8px;
-    border-radius: 5px;
-    background-color: rgb(242, 201, 53);
+  width: 30px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(242, 201, 53);
 }
 
 .redLine {
-    width: 30px;
-    height: 8px;
-    border-radius: 5px;
-    background-color: rgb(255, 61, 61);;
+  width: 30px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: rgb(255, 61, 61);
+  ;
 }
 
 .percentChart {
-    font-weight: bold!important;
-    color: black !important;
-    margin-top: -.25em;
-    margin-bottom: .3em!important;
-    font-size: 13px!important;
+  font-weight: bold!important;
+  color: black !important;
+  margin-top: -.25em;
+  margin-bottom: .3em!important;
+  font-size: 13px!important;
 }
 
 .moreSpace {
-    margin-left: -.6em!important;
+  margin-left: -.6em!important;
 }
 
 .infoChart {
-    color: grey!important;
-    float: right!important;
-    margin-right: 1em;
+  color: grey!important;
+  float: right!important;
+  margin-right: 1em;
 }
 
 .chartRow {
-    margin: .8em 0 1.1em;
+  margin: .8em 0 1.1em;
 }
 
 .moreInfoSpace {
-    margin-left: -2em;
+  margin-left: -2em;
 }
 
 .chartValue {
-    float: right;
-    margin-right: 1em;
+  float: right;
+  margin-right: 1em;
 }
 
 .chartIcon {
-    color: green;
-    margin-top: -.2em;
-    font-size: 30px!important;
+  color: green;
+  margin-top: -.2em;
+  font-size: 30px!important;
 }
 
 .subToggle {
@@ -434,7 +429,7 @@ h3 {
 }
 
 .dropIcon {
-  margin-top:.2em;
+  margin-top: .2em;
   margin-left: -.8em;
   margin-right: 1.5em;
   font-weight: bold;
@@ -451,6 +446,7 @@ h3 {
   margin: 0;
   z-index: 1!important;
 }
+
 /* 
 .mapBox {
 
@@ -481,6 +477,7 @@ h3 {
   bottom: 0!important;
   top: initial!important;
 }
+
 .leaflet-left {
   right: 0!important;
   left: initial!important;
@@ -513,4 +510,14 @@ h3 {
 .react-draggable {
   min-width: 330px!important;
   max-width: 500px!important;
+}
+
+.chartImg {
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
