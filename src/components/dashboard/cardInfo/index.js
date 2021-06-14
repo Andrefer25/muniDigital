@@ -213,7 +213,7 @@ export const CardAccidentes = ({ visible, close }) => {
 export const CardObras = ({ visible, close }) => {
   if (visible)
     return (
-      <Rnd enableResizing={false} bounds=".mapBox">
+      <Rnd enableResizing={false} bounds=".mapBox" size={{ width: 500,  height: "auto" }}>
         <Modal.Dialog className={visible ? 'animated animatedFadeInUp fadeInUp' : 'fadeOut'}>
           <Modal.Header closeButton onHide={() => close(false)}>
             <GiMiningHelmet className="headerIcon" />
