@@ -6,6 +6,7 @@ import { BsTools, BsFillExclamationCircleFill } from "react-icons/bs";
 import { FaHandPaper, FaClipboardList, FaTree } from "react-icons/fa";
 import { GiMiningHelmet } from "react-icons/gi";
 import { AiFillPieChart } from "react-icons/ai";
+import SidebarItem from "./sidebarItem";
 
 import Logo from "./../../../assets/img/logo-muni.png";
 
@@ -39,6 +40,13 @@ const SideBar = (props) => {
     setActiveSalud(false);
   }
 
+  const changeSite = (active, setActive, propsFunc) => {
+    handleCards(false);
+    disableOthers();
+    setActive(active);
+    propsFunc(active);
+  }
+
   return (
     <>
       <Nav
@@ -54,70 +62,70 @@ const SideBar = (props) => {
             <MdLocationOn className="sidebarMainIcon"/> Dashboard
           </div>
         </Nav.Item>
-        <Nav.Item onClick={() => {handleCards(false); disableOthers(); setActiveReclamos(!activeReclamos); props.reclamos(!activeReclamos) } }>
-          <div className={`sideBarItem ${activeReclamos? "sidebarActive":""}`}>
-              <div>
-                Reclamos - PQSRSD
-              </div>
-                <BsFillExclamationCircleFill className="sidebarIcon" />
-          </div>
-        </Nav.Item>
-        <Nav.Item>
-          <div className="sideBarItem">
-              <div>
-                Tareas Programadas
-              </div>
-                <BsTools className="sidebarIcon" />
-          </div>
-        </Nav.Item>
-        <Nav.Item onClick={() => {handleCards(false); disableOthers(); setActiveAsistencia(!activeAsistencia); props.asistencia(!activeAsistencia) } }>
-          <div className={`sideBarItem ${activeAsistencia? "sidebarActive":""}`}>
-              <div>
-                Asistencia Social
-              </div>
-                <FaHandPaper className="sidebarIcon" />
-          </div>
-        </Nav.Item>
-        <Nav.Item onClick={() => {handleCards(false); disableOthers(); setActiveObra(!activeObra); props.obras(!activeObra) } }>
-          <div className={`sideBarItem ${activeObra? "sidebarActive":""}`}>
-              <div>
-                Obras
-              </div>
-                <GiMiningHelmet className="sidebarIcon" />
-          </div>
-        </Nav.Item>
-        <Nav.Item onClick={() => {handleCards(false); disableOthers(); setActiveAccidentes(!activeAccidentes); props.accidentes(!activeAccidentes) } }>
-          <div className={`sideBarItem ${activeAccidentes? "sidebarActive":""}`}>
-              <div>
-                Inseguridad y Accidentes
-              </div>
-                <RiAlarmWarningFill className="sidebarIcon" />
-          </div>
-        </Nav.Item>
-        <Nav.Item>
-          <div className="sideBarItem">
-              <div>
-                Inspecciones
-              </div>
-                <FaClipboardList className="sidebarIcon" />
-          </div>
-        </Nav.Item>
-        <Nav.Item onClick={() => {handleCards(false); disableOthers(); setActiveVerde(!activeVerde); props.verde(!activeVerde) } }>
-          <div className={`sideBarItem ${activeVerde? "sidebarActive":""}`}>
-              <div>
-                Arbolado y Espacios Verdes
-              </div>
-                <FaTree className="sidebarIcon" />
-          </div>
-        </Nav.Item>
-        <Nav.Item onClick={() => {handleCards(false); disableOthers(); setActiveSalud(!activeSalud); props.salud(!activeSalud) } }>
-          <div className={`sideBarItem ${activeSalud? "sidebarActive":""}`}>
-              <div>
-                Salud
-              </div>
-                <RiAddCircleFill className="sidebarIcon" />
-          </div>
-        </Nav.Item>
+        <SidebarItem 
+          title="Reclamos - PQSRSD"
+          active={activeReclamos}
+          setActive={setActiveReclamos}
+          changeSite={changeSite}
+          prop={props.reclamos}
+          Icon={BsFillExclamationCircleFill}
+        />
+        <SidebarItem 
+          title="Tareas Programadas"
+          active={false}
+          setActive={false}
+          changeSite={() => {}}
+          prop={() => {}}
+          Icon={BsTools}
+        />
+        <SidebarItem 
+          title="Asistencia Social"
+          active={activeAsistencia}
+          setActive={setActiveAsistencia}
+          changeSite={changeSite}
+          prop={props.asistencia}
+          Icon={FaHandPaper}
+        />
+        <SidebarItem 
+          title="Obras"
+          active={activeObra}
+          setActive={setActiveObra}
+          changeSite={changeSite}
+          prop={props.obras}
+          Icon={GiMiningHelmet}
+        />
+        <SidebarItem 
+          title="Inseguridad y Accidentes"
+          active={activeAccidentes}
+          setActive={setActiveAccidentes}
+          changeSite={changeSite}
+          prop={props.accidentes}
+          Icon={RiAlarmWarningFill}
+        />
+        <SidebarItem 
+          title="Inspecciones"
+          active={false}
+          setActive={false}
+          changeSite={() => {}}
+          prop={() => {}}
+          Icon={FaClipboardList}
+        />
+        <SidebarItem 
+          title="Arbolado y Espacios Verdes"
+          active={activeVerde}
+          setActive={setActiveVerde}
+          changeSite={changeSite}
+          prop={props.verde}
+          Icon={FaTree}
+        />
+        <SidebarItem 
+          title="Salud"
+          active={activeSalud}
+          setActive={setActiveSalud}
+          changeSite={changeSite}
+          prop={props.salud}
+          Icon={RiAddCircleFill}
+        />
         <Nav.Item>
           <div className="sideBarItem black">
               <div>
